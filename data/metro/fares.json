@@ -1,0 +1,28 @@
+{
+  "version": "2025-08",
+  "source": "DMRC Official",
+  "fare_slabs": [
+    {"min_km": 0, "max_km": 2, "token_fare_inr": 11, "smart_card_fare_inr": 10},
+    {"min_km": 2, "max_km": 5, "token_fare_inr": 22, "smart_card_fare_inr": 20},
+    {"min_km": 5, "max_km": 12, "token_fare_inr": 33, "smart_card_fare_inr": 30},
+    {"min_km": 12, "max_km": 21, "token_fare_inr": 43, "smart_card_fare_inr": 39},
+    {"min_km": 21, "max_km": 32, "token_fare_inr": 54, "smart_card_fare_inr": 49},
+    {"min_km": 32, "max_km": 999, "token_fare_inr": 64, "smart_card_fare_inr": 58}
+  ],
+  "discounts": {
+    "smart_card_pct": 10,
+    "off_peak_pct": 20,
+    "off_peak_hours": [
+      {"start": "06:00", "end": "08:00"},
+      {"start": "12:00", "end": "17:00"},
+      {"start": "22:00", "end": "23:59"}
+    ],
+    "sunday_holiday_discount_inr": 10
+  },
+  "operating_hours": {
+    "first_train": "05:30",
+    "last_train": "23:30",
+    "frequency_peak_min": 3,
+    "frequency_offpeak_min": 5
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "version": "2025-01",
+  "source": "Delhi Transport Department",
+  "notes": "Official auto-rickshaw fare structure post-2023 revision",
+  "fare_structure": {
+    "base_fare_inr": 30,
+    "base_distance_km": 1.5,
+    "per_km_rate_inr": 11,
+    "night_surcharge_pct": 25,
+    "night_start_hour": 23,
+    "night_end_hour": 5,
+    "waiting_charge_per_hour_inr": 30,
+    "min_waiting_minutes": 15,
+    "luggage_charge_inr": 10
+  },
+  "road_distance_multiplier": 1.4,
+  "typical_surge_multiplier": {
+    "peak_morning": 1.3,
+    "peak_evening": 1.5,
+    "rain": 1.8,
+    "late_night": 1.2
+  },
+  "common_routes": [
+    {
+      "from": "Connaught Place",
+      "to": "Saket",
+      "distance_km": 14.5,
+      "typical_meter_fare_inr": 173,
+      "typical_asking_fare_inr": 250
+    },
+    {
+      "from": "Kashmere Gate",
+      "to": "Laxmi Nagar",
+      "distance_km": 7.2,
+      "typical_meter_fare_inr": 93,
+      "typical_asking_fare_inr": 150
+    },
+    {
+      "from": "Uttam Nagar",
+      "to": "Janakpuri",
+      "distance_km": 3.5,
+      "typical_meter_fare_inr": 52,
+      "typical_asking_fare_inr": 80
+    },
+    {
+      "from": "Dwarka Sector 21",
+      "to": "Palam",
+      "distance_km": 5.0,
+      "typical_meter_fare_inr": 69,
+      "typical_asking_fare_inr": 100
+    },
+    {
+      "from": "Rajiv Chowk",
+      "to": "India Gate",
+      "distance_km": 2.8,
+      "typical_meter_fare_inr": 44,
+      "typical_asking_fare_inr": 80
+    },
+    {
+      "from": "AIIMS",
+      "to": "Nehru Place",
+      "distance_km": 5.5,
+      "typical_meter_fare_inr": 74,
+      "typical_asking_fare_inr": 120
+    },
+    {
+      "from": "New Delhi Railway Station",
+      "to": "Old Delhi",
+      "distance_km": 3.0,
+      "typical_meter_fare_inr": 47,
+      "typical_asking_fare_inr": 100
+    },
+    {
+      "from": "Hauz Khas",
+      "to": "Malviya Nagar",
+      "distance_km": 2.5,
+      "typical_meter_fare_inr": 41,
+      "typical_asking_fare_inr": 60
+    }
+  ]
+}

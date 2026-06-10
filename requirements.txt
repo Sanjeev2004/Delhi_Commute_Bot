@@ -1,0 +1,42 @@
+# FastAPI
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+pydantic-settings==2.7.1
+python-multipart==0.0.20
+
+# NLP / ML
+transformers==4.47.1
+torch>=2.1.0
+sentence-transformers==3.3.1
+
+# RAG
+langchain==0.3.14
+langchain-community==0.3.14
+faiss-cpu==1.9.0.post1
+
+# Database
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0
+alembic==1.14.0
+aiosqlite==0.20.0
+
+# Data processing
+pandas==2.2.3
+numpy>=1.26.0
+rapidfuzz==3.11.0
+
+# Geospatial
+geopy==2.4.1
+
+# HTTP client (for n8n/Twilio)
+httpx==0.28.1
+
+# Utilities
+python-dotenv==1.0.1
+loguru==0.7.3
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx  # also used for test client

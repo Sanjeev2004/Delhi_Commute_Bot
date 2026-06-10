@@ -1,0 +1,149 @@
+{
+  "version": "2025-08",
+  "source": "DMRC Official Network Map",
+  "lines": {
+    "red": {
+      "name": "Red Line",
+      "code": "Line 1",
+      "color": "#EE1C25",
+      "stations": [
+        "Rithala", "Rohini West", "Rohini East", "Pitampura", "Kohat Enclave",
+        "Netaji Subhash Place", "Keshav Puram", "Kanhaiya Nagar", "Inderlok",
+        "Shastri Nagar", "Pratap Nagar", "Pulbangash", "Tis Hazari",
+        "Kashmere Gate", "Shastri Park", "Seelampur", "Welcome",
+        "Shahdara", "Mansarovar Park", "Jhilmil", "Dilshad Garden"
+      ]
+    },
+    "yellow": {
+      "name": "Yellow Line",
+      "code": "Line 2",
+      "color": "#FFCF00",
+      "stations": [
+        "Samaypur Badli", "Rohini Sector 18-19", "Haiderpur Badli Mor",
+        "Jahangirpuri", "Adarsh Nagar", "Azadpur", "Model Town",
+        "Guru Tegh Bahadur Nagar", "Vishwavidyalaya", "Vidhan Sabha",
+        "Civil Lines", "Kashmere Gate", "Chandni Chowk", "Chawri Bazar",
+        "New Delhi", "Rajiv Chowk", "Patel Chowk", "Central Secretariat",
+        "Udyog Bhawan", "Lok Kalyan Marg", "Jorbagh", "INA", "AIIMS",
+        "Green Park", "Hauz Khas", "Malviya Nagar", "Saket",
+        "Qutab Minar", "Chhatarpur", "Sultanpur", "Ghitorni",
+        "Arjan Garh", "Guru Dronacharya", "Sikandarpur", "MG Road",
+        "IFFCO Chowk", "HUDA City Centre"
+      ]
+    },
+    "blue": {
+      "name": "Blue Line",
+      "code": "Line 3",
+      "color": "#0066B3",
+      "stations": [
+        "Dwarka Sector 21", "Dwarka Sector 8", "Dwarka Sector 9",
+        "Dwarka Sector 10", "Dwarka Sector 11", "Dwarka Sector 12",
+        "Dwarka Sector 13", "Dwarka Sector 14", "Dwarka",
+        "Dwarka Mor", "Nawada", "Uttam Nagar East", "Uttam Nagar West",
+        "Janakpuri West", "Janakpuri East", "Tilak Nagar", "Subhash Nagar",
+        "Tagore Garden", "Rajouri Garden", "Ramesh Nagar", "Moti Nagar",
+        "Kirti Nagar", "Shadipur", "Patel Nagar", "Rajendra Place",
+        "Karol Bagh", "Jhandewalan", "Ramakrishna Ashram Marg",
+        "Rajiv Chowk", "Barakhamba Road", "Mandi House", "Pragati Maidan",
+        "Indraprastha", "Yamuna Bank", "Akshardham", "Mayur Vihar Phase 1",
+        "Mayur Vihar Extension", "New Ashok Nagar", "Noida Sector 15",
+        "Noida Sector 16", "Noida Sector 18", "Botanical Garden",
+        "Golf Course", "Noida City Centre", "Noida Sector 34",
+        "Noida Sector 52", "Noida Sector 61", "Noida Sector 59",
+        "Noida Sector 62", "Noida Electronic City"
+      ]
+    },
+    "blue_branch": {
+      "name": "Blue Line Branch",
+      "code": "Line 3 Branch",
+      "color": "#0066B3",
+      "stations": [
+        "Yamuna Bank", "Laxmi Nagar", "Nirman Vihar", "Preet Vihar",
+        "Karkarduma", "Anand Vihar ISBT", "Kaushambi", "Vaishali"
+      ]
+    },
+    "green": {
+      "name": "Green Line",
+      "code": "Line 5",
+      "color": "#00A550",
+      "stations": [
+        "Mundka", "Mundka Industrial Area", "Ghevra",
+        "Tikri Kalan", "Tikri Border", "Pandit Shree Ram Sharma",
+        "Bahadurgarh City", "Brigadier Hoshiar Singh",
+        "Inderlok", "Ashok Park Main", "Punjabi Bagh", "Shivaji Park",
+        "Madipur", "Paschim Vihar East", "Paschim Vihar West",
+        "Peera Garhi", "Udyog Nagar"
+      ]
+    },
+    "violet": {
+      "name": "Violet Line",
+      "code": "Line 6",
+      "color": "#9400D3",
+      "stations": [
+        "Kashmere Gate", "Lal Quila", "Jama Masjid", "Delhi Gate",
+        "ITO", "Mandi House", "Janpath", "Central Secretariat",
+        "Khan Market", "Jawaharlal Nehru Stadium", "Jangpura",
+        "Lajpat Nagar", "Moolchand", "Kailash Colony", "Nehru Place",
+        "Kalkaji Mandir", "Govind Puri", "Okhla", "Jasola Apollo",
+        "Sarita Vihar", "Mohan Estate", "Tughlakabad", "Badarpur Border",
+        "Sarai", "NHPC Chowk", "Mewala Maharajpur", "Sector 28",
+        "Badkal Mor", "Old Faridabad", "Neelam Chowk Ajronda",
+        "Bata Chowk", "Escorts Mujesar", "Raja Nahar Singh"
+      ]
+    },
+    "pink": {
+      "name": "Pink Line",
+      "code": "Line 7",
+      "color": "#E91E8C",
+      "stations": [
+        "Majlis Park", "Azadpur", "Shalimar Bagh", "Netaji Subhash Place",
+        "Shakurpur", "Punjabi Bagh West", "ESI Hospital", "Rajouri Garden",
+        "Mayapuri", "Naraina Vihar", "Delhi Cantonment", "Durgabai Deshmukh South Campus",
+        "Sir Vishweshwaraiah Moti Bagh", "Bhikaji Cama Place", "Sarojini Nagar",
+        "INA", "South Extension", "Lajpat Nagar", "Vinobapuri", "Ashram",
+        "Hazrat Nizamuddin", "Mayur Vihar Phase 1", "Mayur Vihar Pocket 1",
+        "Trilokpuri Sanjay Lake", "East Vinod Nagar Mayur Vihar 2",
+        "Mandawali West Vinod Nagar", "IP Extension", "Anand Vihar ISBT",
+        "Karkarduma", "Karkarduma Court", "Krishna Nagar",
+        "East Azad Nagar", "Welcome", "Jaffrabad", "Maujpur Babarpur",
+        "Gokulpuri", "Johri Enclave", "Shiv Vihar"
+      ]
+    },
+    "magenta": {
+      "name": "Magenta Line",
+      "code": "Line 8",
+      "color": "#B5007F",
+      "stations": [
+        "Janakpuri West", "Dabri Mor Janakpuri South", "Dashrathpuri",
+        "Palam", "Sadar Bazaar Cantonment", "Terminal 1 IGI Airport",
+        "Shankar Vihar", "Vasant Vihar", "Munirka", "RK Puram",
+        "IIT Delhi", "Hauz Khas", "Panchsheel Park", "Chirag Delhi",
+        "Greater Kailash", "Nehru Enclave", "Kalkaji Mandir",
+        "Okhla NSIC", "Sukhdev Vihar", "Jamia Millia Islamia",
+        "Okhla Vihar", "Jasola Vihar Shaheen Bagh", "Kalindi Kunj",
+        "Okhla Bird Sanctuary", "Botanical Garden"
+      ]
+    }
+  },
+  "interchanges": {
+    "Kashmere Gate": ["red", "yellow", "violet"],
+    "Rajiv Chowk": ["yellow", "blue"],
+    "Central Secretariat": ["yellow", "violet"],
+    "Mandi House": ["blue", "violet"],
+    "Inderlok": ["red", "green"],
+    "Yamuna Bank": ["blue", "blue_branch"],
+    "Hauz Khas": ["yellow", "magenta"],
+    "Janakpuri West": ["blue", "magenta"],
+    "Botanical Garden": ["blue", "magenta"],
+    "Kalkaji Mandir": ["violet", "magenta"],
+    "Lajpat Nagar": ["violet", "pink"],
+    "Mayur Vihar Phase 1": ["blue", "pink"],
+    "Azadpur": ["yellow", "pink"],
+    "Netaji Subhash Place": ["red", "pink"],
+    "Welcome": ["red", "pink"],
+    "Rajouri Garden": ["blue", "pink"],
+    "INA": ["yellow", "pink"],
+    "Anand Vihar ISBT": ["blue_branch", "pink"],
+    "Karkarduma": ["blue_branch", "pink"]
+  }
+}
