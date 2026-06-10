@@ -1,0 +1,766 @@
+{
+  "locations": [
+    {
+      "canonical": "Connaught Place",
+      "aliases": ["CP", "Rajiv Chowk", "कनॉट प्लेस", "connaught place", "cp", "rajiv chowk", "inner circle", "outer circle"],
+      "type": "landmark",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Kashmere Gate",
+      "aliases": ["KG", "ISBT Kashmere Gate", "कश्मीरी गेट", "kashmiri gate", "kashmere gate isbt", "kg isbt", "कश्मीर गेट"],
+      "type": "transport_hub",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Chandni Chowk",
+      "aliases": ["चांदनी चौक", "chandni chowk", "chandni chok", "chandini chowk"],
+      "type": "market",
+      "zone": "Old Delhi"
+    },
+    {
+      "canonical": "India Gate",
+      "aliases": ["इंडिया गेट", "india gate", "rajpath", "kartavya path"],
+      "type": "landmark",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Red Fort",
+      "aliases": ["Lal Qila", "लाल किला", "red fort", "lal kila", "lal quila"],
+      "type": "landmark",
+      "zone": "Old Delhi"
+    },
+    {
+      "canonical": "Qutub Minar",
+      "aliases": ["Qutb Minar", "कुतुब मीनार", "qutub minar", "qutb minar", "qutab minar"],
+      "type": "landmark",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "AIIMS",
+      "aliases": ["All India Institute of Medical Sciences", "एम्स", "aiims", "aiims delhi", "aiims hospital"],
+      "type": "hospital",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Safdarjung Hospital",
+      "aliases": ["Safdarjung", "सफदरजंग अस्पताल", "safdarjung hospital", "safdarjang", "safdarjung"],
+      "type": "hospital",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "GTB Hospital",
+      "aliases": ["Guru Teg Bahadur Hospital", "GTB Nagar Hospital", "जीटीबी अस्पताल", "gtb hospital", "guru teg bahadur"],
+      "type": "hospital",
+      "zone": "East Delhi"
+    },
+    {
+      "canonical": "Dwarka",
+      "aliases": ["द्वारका", "dwarka", "dwarika"],
+      "type": "area",
+      "zone": "South West Delhi"
+    },
+    {
+      "canonical": "Dwarka Sector 21",
+      "aliases": ["द्वारका सेक्टर 21", "dwarka sector 21", "dwarka sec 21"],
+      "type": "metro_station",
+      "zone": "South West Delhi"
+    },
+    {
+      "canonical": "Rohini",
+      "aliases": ["रोहिणी", "rohini", "rohini east", "rohini west"],
+      "type": "area",
+      "zone": "North West Delhi"
+    },
+    {
+      "canonical": "Pitampura",
+      "aliases": ["पीतमपुरा", "pitampura", "pitam pura"],
+      "type": "area",
+      "zone": "North West Delhi"
+    },
+    {
+      "canonical": "Vasant Kunj",
+      "aliases": ["वसंत कुंज", "vasant kunj", "vasant vihar", "vk"],
+      "type": "area",
+      "zone": "South West Delhi"
+    },
+    {
+      "canonical": "Saket",
+      "aliases": ["साकेत", "saket", "saket metro", "saket mall"],
+      "type": "area",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Nehru Place",
+      "aliases": ["नेहरू प्लेस", "nehru place", "nehru place market"],
+      "type": "market",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Laxmi Nagar",
+      "aliases": ["लक्ष्मी नगर", "laxmi nagar", "lakshmi nagar"],
+      "type": "area",
+      "zone": "East Delhi"
+    },
+    {
+      "canonical": "Anand Vihar",
+      "aliases": ["ISBT Anand Vihar", "आनंद विहार", "anand vihar", "anand vihar isbt", "anand vihar terminal"],
+      "type": "transport_hub",
+      "zone": "East Delhi"
+    },
+    {
+      "canonical": "Sarai Kale Khan",
+      "aliases": ["ISBT Sarai Kale Khan", "सराय काले खान", "sarai kale khan", "skk", "hazrat nizamuddin isbt"],
+      "type": "transport_hub",
+      "zone": "South East Delhi"
+    },
+    {
+      "canonical": "New Delhi Railway Station",
+      "aliases": ["NDLS", "New Delhi Station", "नई दिल्ली रेलवे स्टेशन", "new delhi station", "new delhi railway station", "ndls"],
+      "type": "transport_hub",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Old Delhi Railway Station",
+      "aliases": ["Delhi Junction", "DLI", "पुरानी दिल्ली रेलवे स्टेशन", "old delhi station", "delhi junction", "dli"],
+      "type": "transport_hub",
+      "zone": "Old Delhi"
+    },
+    {
+      "canonical": "Hazrat Nizamuddin",
+      "aliases": ["Nizamuddin", "NZM", "हज़रत निज़ामुद्दीन", "nizamuddin station", "nzm", "nizamuddin railway station"],
+      "type": "transport_hub",
+      "zone": "South East Delhi"
+    },
+    {
+      "canonical": "IGI Airport Terminal 3",
+      "aliases": ["T3", "Terminal 3", "IGI T3", "एयरपोर्ट टर्मिनल 3", "airport t3", "terminal 3", "igi airport"],
+      "type": "transport_hub",
+      "zone": "South West Delhi"
+    },
+    {
+      "canonical": "IGI Airport Terminal 1",
+      "aliases": ["T1", "Terminal 1", "IGI T1", "एयरपोर्ट टर्मिनल 1", "airport t1", "terminal 1", "domestic terminal"],
+      "type": "transport_hub",
+      "zone": "South West Delhi"
+    },
+    {
+      "canonical": "Delhi University",
+      "aliases": ["DU", "North Campus", "दिल्ली विश्वविद्यालय", "delhi university", "du", "du north campus", "du south campus"],
+      "type": "university",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "JNU",
+      "aliases": ["Jawaharlal Nehru University", "जेएनयू", "jnu", "jawaharlal nehru university"],
+      "type": "university",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Jamia Millia Islamia",
+      "aliases": ["Jamia", "जामिया", "jamia", "jamia millia", "jamia nagar"],
+      "type": "university",
+      "zone": "South East Delhi"
+    },
+    {
+      "canonical": "IIT Delhi",
+      "aliases": ["IITD", "Indian Institute of Technology Delhi", "आईआईटी दिल्ली", "iit delhi", "iitd", "iit gate"],
+      "type": "university",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Sarojini Nagar",
+      "aliases": ["सरोजिनी नगर", "sarojini nagar", "sarojini", "sarojini market"],
+      "type": "market",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Lajpat Nagar",
+      "aliases": ["लाजपत नगर", "lajpat nagar", "lajpat nagar market", "lajpat"],
+      "type": "market",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Karol Bagh",
+      "aliases": ["करोल बाग", "karol bagh", "karol bag", "kb"],
+      "type": "market",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Rajouri Garden",
+      "aliases": ["राजौरी गार्डन", "rajouri garden", "rajouri", "rg"],
+      "type": "area",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Janakpuri",
+      "aliases": ["जनकपुरी", "janakpuri", "janak puri", "janakpuri west", "janakpuri east"],
+      "type": "area",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Uttam Nagar",
+      "aliases": ["उत्तम नगर", "uttam nagar", "uttam nagar east", "uttam nagar west"],
+      "type": "area",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Moti Nagar",
+      "aliases": ["मोती नगर", "moti nagar"],
+      "type": "metro_station",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Kirti Nagar",
+      "aliases": ["कीर्ति नगर", "kirti nagar"],
+      "type": "metro_station",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Patel Nagar",
+      "aliases": ["पटेल नगर", "patel nagar", "east patel nagar", "west patel nagar"],
+      "type": "area",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Hauz Khas",
+      "aliases": ["हौज खास", "hauz khas", "hauz khas village", "hkv", "haus khas"],
+      "type": "area",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Green Park",
+      "aliases": ["ग्रीन पार्क", "green park", "green park metro"],
+      "type": "metro_station",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Malviya Nagar",
+      "aliases": ["मालवीय नगर", "malviya nagar", "malviya"],
+      "type": "area",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Greater Kailash",
+      "aliases": ["GK", "GK-1", "GK-2", "ग्रेटर कैलाश", "greater kailash", "gk", "gk1", "gk2", "gk 1", "gk 2"],
+      "type": "area",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Kalkaji",
+      "aliases": ["कालकाजी", "kalkaji", "kalkaji mandir", "kalkaji temple"],
+      "type": "area",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Govindpuri",
+      "aliases": ["गोविंदपुरी", "govindpuri", "govind puri"],
+      "type": "metro_station",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Okhla",
+      "aliases": ["ओखला", "okhla", "okhla industrial area", "okhla phase 1", "okhla phase 2", "okhla phase 3"],
+      "type": "area",
+      "zone": "South East Delhi"
+    },
+    {
+      "canonical": "Nehru Enclave",
+      "aliases": ["नेहरू एन्क्लेव", "nehru enclave"],
+      "type": "area",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Defence Colony",
+      "aliases": ["डिफेन्स कॉलोनी", "defence colony", "defense colony", "def col"],
+      "type": "area",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Jor Bagh",
+      "aliases": ["जोर बाग", "jor bagh"],
+      "type": "metro_station",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Lodhi Colony",
+      "aliases": ["लोधी कॉलोनी", "lodhi colony", "lodhi garden", "lodi garden", "lodi colony"],
+      "type": "area",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "INA",
+      "aliases": ["INA Market", "आईएनए", "ina", "ina market", "ina colony"],
+      "type": "market",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Dilli Haat",
+      "aliases": ["दिल्ली हाट", "dilli haat", "delhi haat"],
+      "type": "landmark",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Pragati Maidan",
+      "aliases": ["प्रगति मैदान", "pragati maidan", "supreme court metro", "pragati maidan metro"],
+      "type": "landmark",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Mandi House",
+      "aliases": ["मंडी हाउस", "mandi house", "mandi house metro"],
+      "type": "metro_station",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Barakhamba Road",
+      "aliases": ["बाराखम्बा रोड", "barakhamba road", "barakhamba"],
+      "type": "metro_station",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Patel Chowk",
+      "aliases": ["पटेल चौक", "patel chowk"],
+      "type": "metro_station",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Central Secretariat",
+      "aliases": ["केन्द्रीय सचिवालय", "central secretariat", "secretariat"],
+      "type": "metro_station",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Udyog Bhawan",
+      "aliases": ["उद्योग भवन", "udyog bhawan", "udyog bhavan"],
+      "type": "metro_station",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Lok Kalyan Marg",
+      "aliases": ["Race Course", "लोक कल्याण मार्ग", "lok kalyan marg", "race course"],
+      "type": "metro_station",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Jhandewalan",
+      "aliases": ["झंडेवालान", "jhandewalan"],
+      "type": "metro_station",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "RK Ashram Marg",
+      "aliases": ["आरके आश्रम मार्ग", "rk ashram marg", "rk ashram"],
+      "type": "metro_station",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Pulbangash",
+      "aliases": ["पुलबंगश", "pulbangash", "pul bangash"],
+      "type": "metro_station",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Tis Hazari",
+      "aliases": ["तीस हज़ारी", "tis hazari", "tees hazari"],
+      "type": "metro_station",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Vishwavidyalaya",
+      "aliases": ["विश्वविद्यालय", "vishwavidyalaya", "vidhan sabha", "du metro"],
+      "type": "metro_station",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "GTB Nagar",
+      "aliases": ["जीटीबी नगर", "gtb nagar", "guru teg bahadur nagar"],
+      "type": "metro_station",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Model Town",
+      "aliases": ["मॉडल टाउन", "model town"],
+      "type": "metro_station",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Azadpur",
+      "aliases": ["आज़ादपुर", "azadpur", "aazadpur", "azadpur mandi"],
+      "type": "metro_station",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Shalimar Bagh",
+      "aliases": ["शालीमार बाग", "shalimar bagh"],
+      "type": "area",
+      "zone": "North West Delhi"
+    },
+    {
+      "canonical": "Netaji Subhash Place",
+      "aliases": ["NSP", "नेताजी सुभाष प्लेस", "netaji subhash place", "nsp", "wazirpur"],
+      "type": "metro_station",
+      "zone": "North West Delhi"
+    },
+    {
+      "canonical": "Inderlok",
+      "aliases": ["इंदरलोक", "inderlok"],
+      "type": "metro_station",
+      "zone": "North West Delhi"
+    },
+    {
+      "canonical": "Shakti Nagar",
+      "aliases": ["शक्ति नगर", "shakti nagar"],
+      "type": "area",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Kamla Nagar",
+      "aliases": ["कमला नगर", "kamla nagar", "kamla nagar market"],
+      "type": "market",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Mukherjee Nagar",
+      "aliases": ["मुखर्जी नगर", "mukherjee nagar", "mukharjee nagar"],
+      "type": "area",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Civil Lines",
+      "aliases": ["सिविल लाइंस", "civil lines"],
+      "type": "metro_station",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Vidhan Sabha",
+      "aliases": ["विधान सभा", "vidhan sabha"],
+      "type": "metro_station",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Dilshad Garden",
+      "aliases": ["दिलशाद गार्डन", "dilshad garden"],
+      "type": "metro_station",
+      "zone": "East Delhi"
+    },
+    {
+      "canonical": "Shahdara",
+      "aliases": ["शाहदरा", "shahdara"],
+      "type": "area",
+      "zone": "East Delhi"
+    },
+    {
+      "canonical": "Preet Vihar",
+      "aliases": ["प्रीत विहार", "preet vihar"],
+      "type": "metro_station",
+      "zone": "East Delhi"
+    },
+    {
+      "canonical": "Karkardooma",
+      "aliases": ["करकरडूमा", "karkardooma", "karkarduma"],
+      "type": "area",
+      "zone": "East Delhi"
+    },
+    {
+      "canonical": "Akshardham",
+      "aliases": ["अक्षरधाम", "akshardham", "akshardham temple", "akshardham metro"],
+      "type": "landmark",
+      "zone": "East Delhi"
+    },
+    {
+      "canonical": "Mayur Vihar",
+      "aliases": ["मयूर विहार", "mayur vihar", "mayur vihar phase 1", "mayur vihar phase 2", "mayur vihar phase 3"],
+      "type": "area",
+      "zone": "East Delhi"
+    },
+    {
+      "canonical": "Noida City Centre",
+      "aliases": ["नोएडा सिटी सेंटर", "noida city centre", "noida city center", "noida"],
+      "type": "metro_station",
+      "zone": "NCR"
+    },
+    {
+      "canonical": "Botanical Garden",
+      "aliases": ["बोटैनिकल गार्डन", "botanical garden", "botanical garden metro"],
+      "type": "metro_station",
+      "zone": "NCR"
+    },
+    {
+      "canonical": "Vaishali",
+      "aliases": ["वैशाली", "vaishali", "vaishali metro"],
+      "type": "metro_station",
+      "zone": "NCR"
+    },
+    {
+      "canonical": "Gurgaon",
+      "aliases": ["Gurugram", "गुड़गांव", "gurgaon", "gurugram", "ggn"],
+      "type": "area",
+      "zone": "NCR"
+    },
+    {
+      "canonical": "HUDA City Centre",
+      "aliases": ["हुडा सिटी सेंटर", "huda city centre", "huda city center", "huda"],
+      "type": "metro_station",
+      "zone": "NCR"
+    },
+    {
+      "canonical": "Sikanderpur",
+      "aliases": ["सिकंदरपुर", "sikanderpur", "sikandarpur"],
+      "type": "metro_station",
+      "zone": "NCR"
+    },
+    {
+      "canonical": "MG Road Gurgaon",
+      "aliases": ["MG Road", "एमजी रोड", "mg road", "mg road gurgaon", "mg road gurugram"],
+      "type": "metro_station",
+      "zone": "NCR"
+    },
+    {
+      "canonical": "Lotus Temple",
+      "aliases": ["लोटस टेम्पल", "lotus temple", "bahai temple", "bahai mandir"],
+      "type": "landmark",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Janpath",
+      "aliases": ["जनपथ", "janpath", "janpath market"],
+      "type": "market",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Khan Market",
+      "aliases": ["खान मार्केट", "khan market"],
+      "type": "market",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Daryaganj",
+      "aliases": ["दरियागंज", "daryaganj", "darya ganj"],
+      "type": "area",
+      "zone": "Old Delhi"
+    },
+    {
+      "canonical": "Jama Masjid",
+      "aliases": ["जामा मस्जिद", "jama masjid", "jama masjid metro"],
+      "type": "landmark",
+      "zone": "Old Delhi"
+    },
+    {
+      "canonical": "Chawri Bazar",
+      "aliases": ["चावड़ी बाज़ार", "chawri bazar", "chawri bazaar", "chawri bazar metro"],
+      "type": "metro_station",
+      "zone": "Old Delhi"
+    },
+    {
+      "canonical": "Pahar Ganj",
+      "aliases": ["पहाड़गंज", "pahar ganj", "paharganj", "main bazaar"],
+      "type": "area",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Munirka",
+      "aliases": ["मुनिरका", "munirka"],
+      "type": "area",
+      "zone": "South West Delhi"
+    },
+    {
+      "canonical": "R K Puram",
+      "aliases": ["RK Puram", "आरके पुरम", "rk puram", "r k puram"],
+      "type": "area",
+      "zone": "South West Delhi"
+    },
+    {
+      "canonical": "Pusa Road",
+      "aliases": ["पूसा रोड", "pusa road", "pusa institute"],
+      "type": "area",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Tilak Nagar",
+      "aliases": ["तिलक नगर", "tilak nagar"],
+      "type": "metro_station",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Subhash Nagar",
+      "aliases": ["सुभाष नगर", "subhash nagar"],
+      "type": "metro_station",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Tagore Garden",
+      "aliases": ["टैगोर गार्डन", "tagore garden"],
+      "type": "metro_station",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Peera Garhi",
+      "aliases": ["पीरा गढ़ी", "peera garhi", "peeragarhi"],
+      "type": "metro_station",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Paschim Vihar",
+      "aliases": ["पश्चिम विहार", "paschim vihar", "paschim vihar east", "paschim vihar west"],
+      "type": "area",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Naraina",
+      "aliases": ["नारायणा", "naraina", "naraina vihar", "naraina industrial area"],
+      "type": "area",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Mayapuri",
+      "aliases": ["मायापुरी", "mayapuri", "maya puri"],
+      "type": "area",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Moolchand",
+      "aliases": ["मूलचंद", "moolchand", "mool chand", "moolchand hospital"],
+      "type": "metro_station",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Lajpat Nagar Metro",
+      "aliases": ["लाजपत नगर मेट्रो", "lajpat nagar metro"],
+      "type": "metro_station",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "South Extension",
+      "aliases": ["South Ex", "साउथ एक्सटेंशन", "south extension", "south ex", "south extension market"],
+      "type": "market",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "East of Kailash",
+      "aliases": ["ईस्ट ऑफ कैलाश", "east of kailash", "eok"],
+      "type": "area",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Nehru Stadium",
+      "aliases": ["नेहरू स्टेडियम", "nehru stadium", "jawaharlal nehru stadium"],
+      "type": "landmark",
+      "zone": "Central Delhi"
+    },
+    {
+      "canonical": "Badarpur",
+      "aliases": ["बदरपुर", "badarpur", "badarpur border"],
+      "type": "area",
+      "zone": "South East Delhi"
+    },
+    {
+      "canonical": "Tughlaqabad",
+      "aliases": ["तुगलकाबाद", "tughlaqabad", "tughlakabad"],
+      "type": "metro_station",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Chattarpur",
+      "aliases": ["छतरपुर", "chattarpur", "chhatarpur", "chattarpur temple", "chattarpur metro"],
+      "type": "metro_station",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Sultanpur",
+      "aliases": ["सुल्तानपुर", "sultanpur", "sultanpur metro"],
+      "type": "metro_station",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Ghitorni",
+      "aliases": ["घिटोरनी", "ghitorni"],
+      "type": "metro_station",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Arjan Garh",
+      "aliases": ["अर्जन गढ़", "arjan garh", "arjangarh"],
+      "type": "metro_station",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Guru Dronacharya",
+      "aliases": ["गुरु द्रोणाचार्य", "guru dronacharya", "dronacharya metro"],
+      "type": "metro_station",
+      "zone": "NCR"
+    },
+    {
+      "canonical": "Iffco Chowk",
+      "aliases": ["इफ्को चौक", "iffco chowk"],
+      "type": "metro_station",
+      "zone": "NCR"
+    },
+    {
+      "canonical": "Dhaula Kuan",
+      "aliases": ["धौला कुआं", "dhaula kuan", "dhoula kuan"],
+      "type": "area",
+      "zone": "South West Delhi"
+    },
+    {
+      "canonical": "Moolchand",
+      "aliases": ["मूलचंद", "moolchand"],
+      "type": "area",
+      "zone": "South Delhi"
+    },
+    {
+      "canonical": "Sadar Bazaar",
+      "aliases": ["सदर बाज़ार", "sadar bazaar", "sadar bazar"],
+      "type": "market",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Majnu Ka Tilla",
+      "aliases": ["मजनू का टीला", "majnu ka tilla", "mkt", "tibetan colony"],
+      "type": "area",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Burari",
+      "aliases": ["बुराड़ी", "burari"],
+      "type": "area",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Jahangirpuri",
+      "aliases": ["जहांगीरपुरी", "jahangirpuri", "jahangir puri"],
+      "type": "metro_station",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Samaypur Badli",
+      "aliases": ["समयपुर बादली", "samaypur badli", "badli"],
+      "type": "metro_station",
+      "zone": "North Delhi"
+    },
+    {
+      "canonical": "Rithala",
+      "aliases": ["रिठाला", "rithala"],
+      "type": "metro_station",
+      "zone": "North West Delhi"
+    },
+    {
+      "canonical": "Mundka",
+      "aliases": ["मुंडका", "mundka"],
+      "type": "metro_station",
+      "zone": "West Delhi"
+    },
+    {
+      "canonical": "Najafgarh",
+      "aliases": ["नजफगढ़", "najafgarh"],
+      "type": "area",
+      "zone": "South West Delhi"
+    },
+    {
+      "canonical": "Mehrauli",
+      "aliases": ["महरौली", "mehrauli"],
+      "type": "area",
+      "zone": "South Delhi"
+    }
+  ]
+}

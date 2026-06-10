@@ -31,6 +31,7 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     2. Load the intent classifier (if available).
     3. Load the entity extractor (if available).
     4. Load the RAG retriever (FAISS indices).
+    5. Initialise the session manager.
 
     On shutdown:
     - Dispose of the database engine connection pool.
@@ -56,10 +57,18 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
             set_classifier(classifier)
             logger.info("Intent classifier loaded from {}", model_path)
         else:
-            logger.warning(
-                "Intent classifier model not found at {} — using keyword fallback",
-                model_path,
-            )
+            # Try to initialise a fresh classifier with default examples
+            try:
+                from src.classifier.intent import IntentClassifier
+
+                classifier = IntentClassifier()
+                set_classifier(classifier)
+                logger.info("Intent classifier initialised with default examples")
+            except Exception as init_exc:
+                logger.warning(
+                    "Could not initialise intent classifier: {} — using keyword fallback",
+                    init_exc,
+                )
     except ImportError:
         logger.warning("Classifier module not available — using keyword fallback")
     except Exception as exc:
@@ -103,6 +112,20 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     except Exception as exc:
         logger.warning("Failed to load RAG retriever: {}", exc)
 
+    # ── 5. Session manager ──────────────────────────────────────────────
+    from src.api.routes import set_session_manager
+
+    try:
+        from src.services.session_service import SessionManager
+
+        session_mgr = SessionManager(ttl_minutes=30)
+        set_session_manager(session_mgr)
+        logger.info("Session manager initialised (TTL=30min)")
+    except ImportError:
+        logger.warning("Session service not available — multi-turn disabled")
+    except Exception as exc:
+        logger.warning("Failed to init session manager: {}", exc)
+
     logger.info("Startup complete ✅")
 
     yield
@@ -121,9 +144,10 @@ app = FastAPI(
     title="DelhiCommuteBot API",
     description=(
         "WhatsApp-based Delhi commute assistant — "
-        "bus, metro, auto, and shared-auto route information."
+        "bus, metro, auto, and shared-auto route information. "
+        "Supports English, Hindi, and Hinglish queries."
     ),
-    version="0.1.0",
+    version="0.2.0",
     lifespan=lifespan,
 )
 
@@ -136,6 +160,17 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# ── Custom middleware ───────────────────────────────────────────────────────
+
+try:
+    from src.middleware import RequestIdMiddleware, RateLimitMiddleware
+
+    app.add_middleware(RequestIdMiddleware)
+    app.add_middleware(RateLimitMiddleware, max_requests=60, window_seconds=60)
+    logger.info("Rate limiting & request ID middleware enabled")
+except ImportError:
+    logger.warning("Custom middleware not available — skipping")
 
 # ── Register routers ───────────────────────────────────────────────────────
 

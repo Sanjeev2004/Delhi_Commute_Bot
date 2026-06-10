@@ -1,0 +1,36 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type
+340,DTC,340,Noida Sector 37 - Mandi House,Connects Noida Sector 37 to Mandi House via Ashram and ITO,3
+427,DTC,427,Rohini Sector 3 - Central Secretariat,Rohini Sector 3 to Central Secretariat via Pitampura and Patel Nagar,3
+473,DTC,473,Kashmere Gate ISBT - Laxmi Nagar Terminal,Kashmere Gate ISBT to Laxmi Nagar via Red Fort and Vikas Marg,3
+500,DTC,500,Azadpur Terminal - Nehru Place Terminal,Azadpur to Nehru Place via GTB Nagar and AIIMS,3
+501,DTC,501,Anand Vihar ISBT - Badarpur Border,Anand Vihar ISBT to Badarpur Border via Ashram and Sarita Vihar,3
+522,DTC,522,Ambedkar Nagar Terminal - Uttam Nagar Terminal,Ambedkar Nagar to Uttam Nagar via Saket and Janakpuri,3
+534,DTC,534,Nehru Place Terminal - Shakti Nagar Terminal,Nehru Place to Shakti Nagar via Lajpat Nagar and ITO,3
+543,DTC,543,ISBT Kashmere Gate - Dwarka Sector 14,Kashmere Gate to Dwarka Sector 14 via Rajouri Garden and Palam,3
+604,DTC,604,Dwarka Sector 23 - Old Delhi Railway Station,Dwarka Sector 23 to Old Delhi Railway Station via Janakpuri and Rajouri Garden,3
+615,DTC,615,Nangloi Terminal - India Gate,Nangloi to India Gate via Mundka and Patel Nagar,3
+620,DTC,620,Jahangirpuri Terminal - Saket,Jahangirpuri to Saket via Azadpur and AIIMS,3
+680,DTC,680,Tilak Nagar Terminal - Connaught Place,Tilak Nagar to Connaught Place via Rajouri Garden and Patel Nagar,3
+702,DTC,702,Sultanpuri Terminal - ISBT Kashmere Gate,Sultanpuri to Kashmere Gate ISBT via Rohini and Model Town,3
+715,DTC,715,Narela Terminal - Azadpur Terminal,Narela to Azadpur via Bawana and Badli,3
+723,DTC,723,Bawana JJ Colony - Mandi House,Bawana JJ Colony to Mandi House via Rohini and Shakti Nagar,3
+729,DTC,729,Dilshad Garden Terminal - Badarpur Border,Dilshad Garden to Badarpur Border via Anand Vihar and Ashram,3
+737,DTC,737,Mayur Vihar Phase 3 - Dhaula Kuan,Mayur Vihar Phase 3 to Dhaula Kuan via Akshardham and India Gate,3
+741,DTC,741,Rohini Sector 15 - AIIMS,Rohini Sector 15 to AIIMS via Pitampura and Karol Bagh,3
+749,DTC,749,Uttam Nagar Terminal - Red Fort,Uttam Nagar to Red Fort via Janakpuri and Rajouri Garden,3
+757,DTC,757,Dwarka Sector 3 - ISBT Kashmere Gate,Dwarka Sector 3 to Kashmere Gate via Palam and Dhaula Kuan,3
+763,DTC,763,Noida City Centre - Old Delhi Railway Station,Noida City Centre to Old Delhi Railway Station via Ashram and ITO,3
+764,DTC,764,Mehrauli Terminal - ISBT Kashmere Gate,Mehrauli to Kashmere Gate ISBT via AIIMS and Connaught Place,3
+778,DTC,778,Pitampura - Nehru Place Terminal,Pitampura to Nehru Place via Shakti Nagar and ITO,3
+784,DTC,784,Sarita Vihar - Azadpur Terminal,Sarita Vihar to Azadpur via AIIMS and Kamla Nagar,3
+805,DTC,805,Okhla Phase 2 - Jahangirpuri,Okhla Phase 2 to Jahangirpuri via Nehru Place and ISBT Kashmere Gate,3
+821,DTC,821,Vasant Kunj - ISBT Kashmere Gate,Vasant Kunj to Kashmere Gate via Hauz Khas and Connaught Place,3
+842,DTC,842,Mangolpuri - Connaught Place,Mangolpuri to Connaught Place via Rohini and Shakti Nagar,3
+850,DTC,850,Kirby Place - Nehru Place Terminal,Kirby Place to Nehru Place via Karol Bagh and AIIMS,3
+871,DTC,871,Ghevra - Connaught Place,Ghevra to Connaught Place via Mundka and Rajouri Garden,3
+900,DTC,900,Najafgarh Terminal - ISBT Kashmere Gate,Najafgarh to Kashmere Gate ISBT via Dwarka and Dhaula Kuan,3
+929,DTC,929,Mehrauli Terminal - Shahdara Terminal,Mehrauli to Shahdara via AIIMS and ITO,3
+951,DTC,951,Alipur - Connaught Place,Alipur to Connaught Place via Narela Road and GTB Nagar,3
+966,DTC,966,Tikri Border - Mandi House,Tikri Border to Mandi House via Mundka and Patel Nagar,3
+981,DTC,981,Mundka Terminal - Connaught Place,Mundka to Connaught Place via Nangloi and Rajouri Garden,3
+990,DTC,990,Karala Village - Pragati Maidan,Karala Village to Pragati Maidan via Rohini and Shakti Nagar,3

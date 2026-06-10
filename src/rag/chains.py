@@ -4,6 +4,8 @@ WhatsApp-friendly response formatter (rule-based, no LLM required).
 Generates rich text responses with emojis and clean formatting for
 each transport mode.  All public methods return plain ``str`` ready
 to be sent over the WhatsApp API.
+
+Supports English, Hindi, and Hinglish responses.
 """
 
 from __future__ import annotations
@@ -64,6 +66,7 @@ class ResponseFormatter:
             return (
                 f"🚌 *Bus: {source} → {dest}*\n\n"
                 f"Sorry, I couldn't find specific bus routes for this pair.\n"
+                f"कोई बस रूट नहीं मिला इस रूट के लिए।\n\n"
                 f"💡 *Tip:* Try checking the DTC app or ask about Metro / Auto options!",
                 [],
             )
@@ -97,6 +100,7 @@ class ResponseFormatter:
                 )
             )
 
+        lines.append("💡 DTC बसों में स्मार्ट कार्ड से 10% छूट मिलती है!")
         return "\n".join(lines), options
 
     # ── Auto ─────────────────────────────────────────────────────────────
@@ -127,11 +131,11 @@ class ResponseFormatter:
         if asking:
             lines.append(f"💸 Typical asking: ₹{asking}")
         if night:
-            lines.append(f"🌙 Night fare: ₹{night}")
+            lines.append(f"🌙 Night fare (11PM-5AM): ₹{night}")
         lines.append("")
         lines.append(
-            "💡 *Tip:* Always insist on meter. "
-            "Report overcharging to 011-42400400."
+            "💡 *Tip:* Always insist on meter! मीटर पर ही जाएं।\n"
+            "📞 Report overcharging: 011-42400400"
         )
 
         option = TransportOption(
@@ -179,7 +183,10 @@ class ResponseFormatter:
                 time_str += f" + {walk} walk"
             lines.append(f"⏱ Time: {time_str}")
         lines.append("")
-        lines.append("💡 *Tip:* Use a smart card for ~10% discount!")
+        lines.append(
+            "💡 *Tip:* स्मार्ट कार्ड से ~10% छूट!\n"
+            "🕐 First train: 6:00 AM | Last train: 11:00 PM"
+        )
 
         option = TransportOption(
             mode="metro",
@@ -246,7 +253,7 @@ class ResponseFormatter:
         if fares:
             cheapest = min(fares, key=lambda x: x[1])
             lines.append(
-                f"💡 *Cheapest:* {cheapest[0].replace('_', ' ').title()} (₹{cheapest[1]})"
+                f"💡 *Cheapest / सबसे सस्ता:* {cheapest[0].replace('_', ' ').title()} (₹{cheapest[1]})"
             )
 
         return "\n".join(lines), structured_options
@@ -268,6 +275,7 @@ class ResponseFormatter:
             return (
                 "🛺 *Shared Auto / E-Rickshaw*\n\n"
                 "No shared auto routes found for this area.\n"
+                "इस इलाके में शेयर ऑटो नहीं मिला।\n\n"
                 "💡 *Tip:* Shared autos are mostly found near metro stations.",
                 [],
             )
@@ -307,18 +315,82 @@ class ResponseFormatter:
 
         return "\n".join(lines), options
 
+    # ── Greeting ─────────────────────────────────────────────────────────
+
+    @staticmethod
+    def format_greeting_response() -> str:
+        """Return a friendly greeting with usage instructions."""
+        return (
+            "🙏 *नमस्ते! Welcome to DelhiCommuteBot!*\n\n"
+            "I can help you with Delhi transport info:\n\n"
+            "🚌 *Bus Routes* — \"Bus from CP to AIIMS\"\n"
+            "🚇 *Metro Routes* — \"Metro to Rajiv Chowk\"\n"
+            "🛺 *Auto Fares* — \"Auto fare from Saket to Hauz Khas\"\n"
+            "🔄 *Compare* — \"Compare options Dwarka to CP\"\n"
+            "🛺 *Shared Auto* — \"Shared auto near Laxmi Nagar\"\n\n"
+            "💬 बस अपना सवाल पूछें — Hindi, Hinglish, or English!\n\n"
+            "Type *help* for more details."
+        )
+
+    # ── Help ─────────────────────────────────────────────────────────────
+
+    @staticmethod
+    def format_help_response() -> str:
+        """Return detailed help text with examples."""
+        return (
+            "ℹ️ *DelhiCommuteBot — Help / मदद*\n\n"
+            f"{_DIVIDER}\n"
+            "🚌 *Bus Routes*\n"
+            "  • \"Bus from Kashmere Gate to Laxmi Nagar\"\n"
+            "  • \"कश्मीरी गेट से बस कौन सी जाएगी\"\n"
+            "  • \"DTC bus number for Dwarka\"\n\n"
+            "🚇 *Metro Routes*\n"
+            "  • \"Metro route from Dwarka to Rajiv Chowk\"\n"
+            "  • \"मेट्रो कैसे जाऊं हौज़ खास\"\n"
+            "  • \"DMRC route to CP\"\n\n"
+            "🛺 *Auto Fares*\n"
+            "  • \"Auto fare from CP to Saket\"\n"
+            "  • \"ऑटो का किराया बताओ\"\n"
+            "  • \"Rickshaw cost Nehru Place to AIIMS\"\n\n"
+            "🔄 *Compare Options*\n"
+            "  • \"Compare options from Nehru Place to AIIMS\"\n"
+            "  • \"Which is cheaper, bus or metro?\"\n\n"
+            "🛺 *Shared Auto / E-Rickshaw*\n"
+            "  • \"Shared auto near Uttam Nagar metro\"\n"
+            "  • \"E-rickshaw routes from Laxmi Nagar\"\n\n"
+            f"{_DIVIDER}\n"
+            "💡 *Tips:*\n"
+            "  • Always mention *from* and *to* locations\n"
+            "  • You can ask follow-up questions!\n"
+            "  • Works in English, Hindi & Hinglish\n"
+            "  • Type *thanks* or *👍* to give feedback"
+        )
+
+    # ── Feedback Acknowledgement ─────────────────────────────────────────
+
+    @staticmethod
+    def format_feedback_ack_response() -> str:
+        """Acknowledge user feedback."""
+        return (
+            "🙏 *Thank you for your feedback!*\n"
+            "धन्यवाद! आपकी राय हमारे लिए महत्वपूर्ण है।\n\n"
+            "Feel free to ask me another commute query anytime! 🚌🚇🛺"
+        )
+
     # ── Fallback ─────────────────────────────────────────────────────────
 
     @staticmethod
     def format_fallback_response(raw_query: str) -> str:
         """Return a friendly fallback when intent is unclear."""
         return (
-            "🤔 I'm not sure I understood that.\n\n"
+            "🤔 I'm not sure I understood that.\n"
+            "मुझे समझ नहीं आया।\n\n"
             "Try asking me something like:\n"
             '• "Bus from Kashmere Gate to Laxmi Nagar"\n'
             '• "Auto fare from CP to Saket"\n'
             '• "Metro route Dwarka to Rajiv Chowk"\n'
             '• "Compare options from Nehru Place to AIIMS"\n'
             '• "Shared auto near Uttam Nagar"\n\n'
-            "💡 I work best with a *from* and *to* location!"
+            "💡 I work best with a *from* and *to* location!\n"
+            "कृपया *from* और *to* location बताएं!"
         )
